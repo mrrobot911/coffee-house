@@ -1,3 +1,29 @@
 body {
-    background-color: #E1D4C9;
+  background-color: #E1D4C9;
+  margin: 20px 40px 40px 40px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fontColour {
+  color: #B0907A;
+}
+.navLinks > ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 40px;
+}
+.hero {
+  background-image: url(/assets/images/img-hero.jpg);
+}
+.heroContainer {
+  padding: 100px;
+  max-width: 530px;
+  color: #E1D4C9;
+}
+footer {
+  background-color: #665F55;
 }
