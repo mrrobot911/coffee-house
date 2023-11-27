@@ -89,6 +89,18 @@ a, a:link, a:visited {
   display: flex;
   flex-direction: row;
 }
+.buttonMenuActive {
+  display: flex;
+  flex-direction: row;
+}
+.buttonMenuActive::before {
+  content: '';
+	position: absolute;
+	left: 0; bottom: -3px;
+	width: 100%;
+	height: 2.5px;
+  background-color: #403F3D;
+}
 .buttonMenu::before {
   content: '';
 	position: absolute;
