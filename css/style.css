@@ -7,13 +7,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-img,
-svg {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
-}
 button {
   padding: 0;
   cursor: pointer;
@@ -52,6 +45,7 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
+  color: #403F3D;
   background-color: #E1D4C9;
   max-width: 1360px;
   margin: 20px auto 40px auto;
@@ -74,8 +68,8 @@ header {
   gap: 33px;
 }
 a, a:link, a:visited {
-  color: #403F3D;
   padding: 5px;
+  color: #403F3D;
   font-size: 16px;
 }
 .buttonMenu {
@@ -117,7 +111,7 @@ a, a:link, a:visited {
   border-radius: 100px;
   background-color: #E1D4C9;
 }
-#favorite > h2 {
+.favoriteContainer > h2 {
   text-align: center;
   font-size: 60px;
   line-height: 125%;
@@ -126,6 +120,7 @@ a, a:link, a:visited {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .slideItem {
   display: flex;
@@ -134,10 +129,189 @@ a, a:link, a:visited {
   align-items: center;
   margin-top: 40px;
 }
-.slideItem > img {
+.imgContainer {
   width: 480px;
-  height: 480px; 
+  height: 480px;
+  margin-bottom: 20px;
 }
-footer {
+.imgContainer > img:hover {
+  scale: 1.1;
+}
+.arrow {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #665F55;
+  border-radius: 50%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrowLeft {
+  transform: rotate(180deg);
+}
+.slideItem > h3 {
+  font-size: 24px;
+  line-height: 125%;
+}
+.slideItem > h4 {
+  text-align: center;
+  max-width: 480px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 16px 0px;
+}
+.slideItem > p {
+  font-size: 24px;
+  line-height: 125%;
+}
+.checkBoxContainer {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+}
+.checkBox {
+  display:block;
+  width: 40px;
+  border-top:4px solid #C1B6AD;
+}
+.checkBoxChecked {
+  border-top:4px solid #665F55;
+}
+.aboutContainer > h2 {
+  font-size: 60px;
+  line-height: 125%;
+  margin-bottom: 40px;
+}
+.aboutImagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 1060px;
+  gap: 40px;
+  margin-bottom: 90px;
+}
+.aboutImagesContainer li {
+  width: 660px;
+}
+.aboutImagesContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.item1 {
+  height: 590px;
+}
+.item2 {
+  height: 430px;
+}
+.item3 {
+  height: 430px;
+}
+.item4 {
+  height: 590px;
+  transform: translateY(-160px);
+}
+.mobileContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.mobileContainer > img {
+  width: 640px;
+}
+.mobileTextContainer {
+  max-width: 630px;
+}
+.mobileTextContainer > h2 {
+  font-size: 60px;
+  line-height: 125%;
+}
+.mobileTextContainer > p {
+  line-height: 150%;
+  margin: 40px 0px;
+}
+.mobileButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+.mobileButtonContainer > button {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 1px solid #665F55;
+  border-radius: 100px;
+}
+.buttonDescription {
+  font-size: 10px;
+  line-height: 140%;
+}
+.buttonStoreName {
+  line-height: 150%;
+}
+.footerContainer {
   background-color: #665F55;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 100px;
+  gap: 100px;
+  border-radius: 40px;
+}
+.footerContainer h2 {
+  max-width: 530px;
+  font-size: 60px;
+  line-height: 125%;
+  margin-bottom: 40px;
+}
+.socialNetworkContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.socialNetworkContainer > li {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #C1B6AD;
+  border-radius: 50%;
+}
+.socialNetworkContainer a {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerContainer h3 {
+  font-size: 24px;
+  line-height: 125%;
+  margin-bottom: 40px;
+}
+.contactLinksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.contactLinksContainer img {
+  margin-right: 8px;
+}
+.contactLinksContainer a {
+  line-height: 150%
 }

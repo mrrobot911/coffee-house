@@ -33,58 +33,62 @@
       </div>
     </div>
   </section>
-  <section id="favorite">
+  <section id="favorite" class="favoriteContainer">
     <h2>Choose your <span class="fontColour">favorite</span> coffee</h2>
     <div class="sliderContainer">
-      <button><img src="/assets/icons/arrow-right.svg" alt="arrow"></button>
+      <button class="arrow arrowLeft"><img src="/assets/icons/arrow-right.svg" alt="arrow"></button>
       <div class="slideItem">
-        <img src="/assets/images/coffee-slider-1.png" alt="S’mores Frappuccino">
+        <div class="imgContainer">
+          <img src="/assets/images/coffee-slider-1.png" alt="S’mores Frappuccino">
+        </div>
         <h3>S’mores Frappuccino</h3>
-        <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+        <h4>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</h4>
         <p>$5.50</p>
       </div>
-      <button><img src="/assets/icons/arrow-right.svg" alt="arrow"></button>
+      <button class="arrow"><img src="/assets/icons/arrow-right.svg" alt="arrow"></button>
     </div>
-    <div>
-      <span></span><span></span><span></span>
+    <div class="checkBoxContainer">
+      <span class="checkBox checkBoxChecked"></span>
+      <span class="checkBox"></span>
+      <span class="checkBox"></span>
     </div>
   </section>
-  <section id="about">
+  <section id="about" class="aboutContainer">
     <h2>Resource is <span class="fontColour">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
-    <div>
-      <img src="/assets/images/about-1.jpg" alt="girl with coffee cup">
-      <img src="/assets/images/about-2.jpg" alt="cup at table">
-      <img src="/assets/images/about-3.jpg" alt="man with laptop and cofee cup">
-      <img src="/assets/images/about-4.jpg" alt="a man and a woman hug and drink coffee">
-    </div>
+    <ul class="aboutImagesContainer">
+      <li class="item1"><img src="/assets/images/about-1.jpg" alt="girl with coffee cup"></li>
+      <li class="item2"><img src="/assets/images/about-2.jpg" alt="cup at table"></li>
+      <li class="item3"><img src="/assets/images/about-3.jpg" alt="man with laptop and cofee cup"></li>
+      <li class="item4"><img src="/assets/images/about-4.jpg" alt="a man and a woman hug and drink coffee"></li>
+    </ul>
   </section>
-  <section id="mobile">
-    <div>
-      <h2>Download our apps to start ordering</h2>
+  <section id="mobile" class="mobileContainer">
+    <div class="mobileTextContainer">
+      <h2><span class="fontColour">Download</span> our apps to start ordering</h2>
       <p>Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
-      <div>
+      <div class="mobileButtonContainer">
         <button>
           <img src="/assets/icons/apple.svg" alt="apple logo">
           <div>
-            <p>Available on the</p>
-            <p>App Store</p>
+            <p class="buttonDescription">Available on the</p>
+            <p class="buttonStoreName">App Store</p>
           </div>
         </button>
         <button>
           <img src="/assets/icons/triangle.svg" alt="google store logo">
           <div>
-            <p>Available on</p>
-            <p>Google Play</p>
+            <p class="buttonDescription">Available on</p>
+            <p class="buttonStoreName">Google Play</p>
           </div>
         </button>
       </div>
     </div>
     <img src="/assets/images/mobyle-screens.png" alt="mobiles foto">
   </section>
-  <footer id="contact">
+  <footer id="contact" class="footerContainer">
     <div>
       <h2>Sip, Savor, Smile. <span class="fontColour">It’s coffee time!</span></h2>
-      <ul>
+      <ul class="socialNetworkContainer">
         <li>
           <a href="https://twitter.com/" target="_blank">
             <img src="/assets/icons/twitter.svg" alt="twitter logo">
@@ -104,7 +108,7 @@
     </div>
     <div>
       <h3>Contact us</h3>
-      <ul>
+      <ul class="contactLinksContainer">
         <li><a href="https://www.google.com/maps/place/Green+Ave,+Los+Angeles,+CA+90017,+%D0%A1%D0%A8%D0%90/@34.0510876,-118.2714967,17z/data=!4m15!1m8!3m7!1s0x80c2c7a34c447f8b:0xe3b7208a65a0b1e2!2zR3JlZW4gQXZlLCBMb3MgQW5nZWxlcywgQ0EgOTAwMTcsINCh0KjQkA!3b1!8m2!3d34.0510876!4d-118.2714967!16s%2Fg%2F1tj1sbyf!3m5!1s0x80c2c7a34c447f8b:0xe3b7208a65a0b1e2!8m2!3d34.0510876!4d-118.2714967!16s%2Fg%2F1tj1sbyf?entry=ttu"><img src="/assets/icons/pin-alt.svg" alt="pin icon">8558 Green Rd.,  LA</a></li>
         <li><a href="tel:+1(603)555-0123"><img src="/assets//icons/phone.svg" alt="phone icon">+1 (603) 555-0123</a></li>
         <li><img src="/assets/icons/clock.svg" alt="clock icon"> Mon-Sat: 9:00 AM – 23:00 PM</li>
