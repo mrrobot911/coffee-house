@@ -117,7 +117,7 @@ a, a:link, a:visited {
   margin-left: 8px;
 }
 .hero {
-  background: no-repeat center url(/assets/images/img-hero.jpg);
+  background: no-repeat center url(./assets/images/img-hero.jpg);
   background-size: cover;
   border-radius: 40px;
 }
