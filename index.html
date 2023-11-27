@@ -4,35 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <img src="/assets/images/logo.png" alt="logo">
+    <a href="/index.html"><img src="/assets/images/logo.png" alt="logo"></a>
     <nav class="navLinks">
       <ul>
-        <li>Favorite coffee</li>
-        <li>About</li>
-        <li>Mobile app</li>
-        <li>Contact us</li>
+        <li><a href="#favorite">Favorite coffee</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#mobile">Mobile app</a></li>
+        <li><a href="#contact">Contact us</a></li>
       </ul>
     </nav>
-    <button>Menu <span><img src="/assets/icons/coffee-cup.svg" alt="coffee cup"></span></button>
+    <a class="buttonMenu" href="/menu/menu.html">Menu <span><img src="/assets/icons/coffee-cup.svg" alt="coffee cup"></span></a>
   </header>
   <section class="hero">
     <div class="heroContainer">
-      <h1><span class="fontColour">Enjoy</span> premium coffee at our charming cafe</h1>
-      <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
-      <button>Menu</button>
+      <div class="heroText">
+        <h1><span class="fontColour">Enjoy</span> premium coffee at our charming cafe</h1>
+        <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+        <a href="/menu/menu.html">Menu</a>
+      </div>
     </div>
   </section>
-  <section class="favorite">
+  <section id="favorite">
     <h2>Choose your <span class="fontColour">favorite</span> coffee</h2>
-    <div>
+    <div class="sliderContainer">
       <button><img src="/assets/icons/arrow-right.svg" alt="arrow"></button>
-      <div>
+      <div class="slideItem">
         <img src="/assets/images/coffee-slider-1.png" alt="S’mores Frappuccino">
         <h3>S’mores Frappuccino</h3>
         <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
@@ -44,7 +49,7 @@
       <span></span><span></span><span></span>
     </div>
   </section>
-  <section>
+  <section id="about">
     <h2>Resource is <span class="fontColour">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
     <div>
       <img src="/assets/images/about-1.jpg" alt="girl with coffee cup">
@@ -53,7 +58,7 @@
       <img src="/assets/images/about-4.jpg" alt="a man and a woman hug and drink coffee">
     </div>
   </section>
-  <section>
+  <section id="mobile">
     <div>
       <h2>Download our apps to start ordering</h2>
       <p>Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
@@ -76,7 +81,7 @@
     </div>
     <img src="/assets/images/mobyle-screens.png" alt="mobiles foto">
   </section>
-  <footer>
+  <footer id="contact">
     <div>
       <h2>Sip, Savor, Smile. <span class="fontColour">It’s coffee time!</span></h2>
       <ul>
