@@ -422,12 +422,42 @@ a, a:link, a:visited {
   max-width: 800px;
   font-size: 60px;
   line-height: 125%;
+  margin-bottom: 34px;
+}
+.offerButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
   margin-bottom: 40px;
+}
+.offerButtonsItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid #C1B6AD;
+  border-radius: 100px;
+  line-height: 150%;
+}
+.activeOffer {
+  background-color: #665F55;
+}
+.activeOffer > span {
+  background-color: #E1D4C9;
+}
+.offerButtonsItem > span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #C1B6AD;
+  margin-right: 8px;
 }
 .offerContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  margin-bottom: 100px;
 }
 .offerCard {
   width: 310px;
