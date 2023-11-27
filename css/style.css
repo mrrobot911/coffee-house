@@ -116,6 +116,9 @@ a, a:link, a:visited {
 .buttonMenu > span {
   margin-left: 8px;
 }
+.buttonMenuActive > span {
+  margin-left: 8px;
+}
 .hero {
   background: no-repeat center url(../assets/images/img-hero.jpg);
   background-size: cover;
