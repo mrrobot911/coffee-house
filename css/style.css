@@ -71,10 +71,35 @@ a, a:link, a:visited {
   padding: 5px;
   color: #403F3D;
   font-size: 16px;
+  position: relative;
+}
+.navLinks a::before {
+  content: '';
+	position: absolute;
+	left: 0; bottom: -3px;
+	width: 0%;
+	height: 1.5px;
+  background-color: #403F3D;
+  transition: 0.3s ease-in-out;
+}
+.navLinks a:hover::before {
+  width: 100%;
 }
 .buttonMenu {
   display: flex;
   flex-direction: row;
+}
+.buttonMenu::before {
+  content: '';
+	position: absolute;
+	left: 0; bottom: -3px;
+	width: 0%;
+	height: 1.5px;
+  background-color: #403F3D;
+  transition: 0.5s ease-in-out;
+}
+.buttonMenu:hover::before {
+  width: 100%;
 }
 .buttonMenu > span {
   margin-left: 8px;
@@ -110,6 +135,21 @@ a, a:link, a:visited {
   line-height: 150%;
   border-radius: 100px;
   background-color: #E1D4C9;
+  display: flex;
+  flex-direction: row;
+}
+.heroText > a::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 50px;
+  background-image: url(/assets/icons/coffee-cup.svg);
+  display: none;
+  transition: 0.6s ease-in-out;
+}
+.heroText > a:hover::after{
+  display: block;
 }
 .favoriteContainer > h2 {
   text-align: center;
@@ -134,6 +174,11 @@ a, a:link, a:visited {
   height: 480px;
   margin-bottom: 20px;
 }
+.imgContainer > img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.6s ease-in-out;
+}
 .imgContainer > img:hover {
   scale: 1.1;
 }
@@ -146,6 +191,12 @@ a, a:link, a:visited {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.5s ease-in-out;
+  stroke: #665F55;
+}
+.arrow:hover {
+  background-color: #665F55;
+  stroke: #E1D4C9;
 }
 .arrowLeft {
   transform: rotate(180deg);
@@ -254,6 +305,13 @@ a, a:link, a:visited {
   padding: 12px 20px;
   border: 1px solid #665F55;
   border-radius: 100px;
+  fill: #403F3D;
+  transition: 0.6s ease-in-out;
+}
+.mobileButtonContainer > button:hover {
+  fill: #E1D4C9;
+  color: #E1D4C9;
+  background-color: #665F55;
 }
 .buttonDescription {
   font-size: 10px;
@@ -290,6 +348,7 @@ a, a:link, a:visited {
   align-items: center;
   border: 1px solid #C1B6AD;
   border-radius: 50%;
+  transition: 0.6s ease-in-out;
 }
 .socialNetworkContainer a {
   width: 70px;
@@ -297,21 +356,46 @@ a, a:link, a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #665F55;
+  stroke: #E1D4C9;
+  transition: 0.6s ease-in-out;
+}
+.socialNetworkContainer li:hover {
+  background-color: #E1D4C9;
+}
+.socialNetworkContainer a:hover {
+  fill: #E1D4C9;
+  stroke: #403F3D;
 }
 .footerContainer h3 {
   font-size: 24px;
   line-height: 125%;
   margin-bottom: 40px;
+  color: #E1D4C9;
+}
+.contactLinksContainer a::before {
+  content: '';
+	position: absolute;
+	left: 0; bottom: -3px;
+	width: 0%;
+	height: 1.5px;
+  background-color: #E1D4C9;
+  transition: 0.6s ease-in-out;
+}
+.contactLinksContainer a:hover::before {
+  width: 100%;
 }
 .contactLinksContainer {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-bottom: 10px;
+  color: #E1D4C9;
 }
 .contactLinksContainer img {
   margin-right: 8px;
 }
 .contactLinksContainer a {
-  line-height: 150%
+  line-height: 150%;
+  color: #E1D4C9;
 }
