@@ -444,6 +444,17 @@ a, a:link, a:visited {
   border: 1px solid #C1B6AD;
   border-radius: 100px;
   line-height: 150%;
+  transition: 0.5s ease-in-out;
+}
+.offerButtonsItem > span {
+  background-color: #E1D4C9;
+  transition: 0.5s ease-in-out;
+}
+.offerButtonsItem:hover {
+  background-color: #665F55;
+}
+.offerButtonsItem:hover > span {
+  background-color: #E1D4C9;
 }
 .activeOffer {
   background-color: #665F55;
