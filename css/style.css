@@ -92,7 +92,7 @@ a, a:link, a:visited {
 .buttonMenuActive {
   display: flex;
   flex-direction: row;
-  cursor: none;
+  cursor: default;
 }
 .buttonMenuActive::before {
   content: '';
@@ -467,6 +467,9 @@ a, a:link, a:visited {
 }
 .offerCard {
   width: 310px;
+  cursor: pointer;
+  border: 1px solid #C1B6AD;
+  border-radius: 40px;
 }
 .offerItemImage {
   width: inherit;
