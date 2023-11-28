@@ -329,10 +329,12 @@ a, a:link, a:visited {
   background-color: #665F55;
 }
 .buttonDescription {
+  display: inline;
   font-size: 10px;
   line-height: 140%;
 }
 .buttonStoreName {
+  display: block;
   line-height: 150%;
 }
 .footerContainer {
