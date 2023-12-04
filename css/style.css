@@ -477,8 +477,9 @@ a, a:link, a:visited {
 .offerContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 100px;
+  row-gap: 35px;
+  column-gap: 40px;
+  margin-bottom: 95px;
 }
 .offerCard {
   width: 310px;
@@ -520,6 +521,9 @@ a, a:link, a:visited {
   margin-top: auto;
 }
 .refreshButton {
+  display: none;
+}
+.burgerMenuButton {
   display: none;
 }
 @media (hover: hover) {
@@ -634,6 +638,7 @@ a, a:link, a:visited {
     margin-bottom: 100px;
   }
   .burgerMenuButton {
+    margin-top: 10px;
     width: 44px;
     height: 44px;
     display: flex;
@@ -646,7 +651,7 @@ a, a:link, a:visited {
     display: block;
     box-sizing: border-box;
     position: relative;
-    top: 9px;
+    top: 4px;
     left: 0;
     background: #403F3D;
     height: 2px;
@@ -656,7 +661,7 @@ a, a:link, a:visited {
   .burgerMenuButton > span::before {
     content: '';
     position: absolute;
-    top: -10px;
+    top: -8px;
     left: 0;
     background: #403F3D;
     width: 16px;
