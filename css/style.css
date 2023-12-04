@@ -572,6 +572,9 @@ a, a:link, a:visited {
   }
 }
 @media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
   .heroContainer {
     padding: 100px 60px;
   }
@@ -668,7 +671,72 @@ a, a:link, a:visited {
     height: 2px;
     transition: all  0.4s ease;
   }
-  .buttonMenuActive {
+  .buttonMenu, .buttonMenuActive {
     display: none;
+  }
+}
+@media (max-width: 380px) {
+  main, footer {
+    margin: 0px 16px;
+  }
+  header {
+    margin: 0px 16px 16px 16px;
+  }
+  .heroContainer {
+    padding: 60px 16px 60px 16px;
+  }
+  .heroText {
+    width: 316px;
+  }
+  .heroText > h1 {
+    font-size: 42px;
+    line-height: 115%; 
+  }
+  .favoriteContainer > h2 {
+    font-size: 32px;
+  }
+  .arrow {
+    display: none;
+  }
+  .imgContainer {
+    width: 348px;
+    height: 348px;
+  }
+  .aboutContainer > h2 {
+    font-size: 32px;
+  }
+  .aboutContainer li {
+    width: 348px;
+  }
+  .mobileTextContainer > h2 {
+    font-size: 32px;
+  }
+  .mobileButtonContainer {
+    flex-direction: column;
+    align-items: start;
+  }
+  .mobileContainer > img {
+    width: 348px;
+    margin-bottom: 10px;
+  }
+  .mobileContainer {
+    gap: 40px;
+  }
+  .footerContainer {
+    padding: 60px 16px 60px 16px;
+    gap: 38px;
+  }
+  .footerContainer h2 {
+    font-size: 32px;
+  }
+  .coffeeContainer > h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .offerContainer {
+    max-height: 2144px;
+  }
+  .offerButtons {
+    gap: 8px;
   }
 }
