@@ -124,12 +124,11 @@ a, a:link, a:visited {
 }
 .heroContainer {
   padding: 100px;
-  max-width: 530px;
   color: #E1D4C9;
   margin-bottom: 100px;
 }
 .heroText {
-  width: 530px;
+  max-width: 530px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -180,8 +179,8 @@ a, a:link, a:visited {
   margin-top: 40px;
 }
 .imgContainer {
-  width: 480px;
-  height: 480px;
+  max-width: 480px;
+  max-height: 480px;
   margin-bottom: 20px;
 }
 .imgContainer > img {
@@ -250,7 +249,7 @@ a, a:link, a:visited {
   margin-bottom: 95px;
 }
 .aboutImagesContainer li {
-  width: 660px;
+  max-width: 660px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -292,8 +291,11 @@ a, a:link, a:visited {
   align-items: center;
   margin-bottom: 90px;
 }
-.mobileContainer > img {
-  width: 640px;
+.mobileFotoContainer {
+  max-width: 640px;
+}
+.mobileFotoContainer img {
+  width: 100%;
 }
 .mobileTextContainer {
   max-width: 630px;
@@ -583,7 +585,7 @@ a, a:link, a:visited {
     align-items: start;
     gap: 95px;
   }
-  .mobileContainer img {
+  .mobileFotoContainer {
     align-self: center;
   }
   .mobileTextContainer {
@@ -598,7 +600,7 @@ a, a:link, a:visited {
     margin-bottom: 100px;
   }
   .aboutImagesContainer li {
-    width: 688px;
+    max-width: 688px;
   }
   .item1 {
     grid-column-start: 1;
@@ -675,7 +677,7 @@ a, a:link, a:visited {
     display: none;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 510px) {
   main, footer {
     margin: 0px 16px;
   }
@@ -686,7 +688,7 @@ a, a:link, a:visited {
     padding: 60px 16px 60px 16px;
   }
   .heroText {
-    width: 316px;
+    max-width: 316px;
   }
   .heroText > h1 {
     font-size: 42px;
@@ -699,14 +701,11 @@ a, a:link, a:visited {
     display: none;
   }
   .imgContainer {
-    width: 348px;
-    height: 348px;
+    max-width: 348px;
+    max-height: 348px;
   }
   .aboutContainer > h2 {
     font-size: 32px;
-  }
-  .aboutContainer li {
-    width: 348px;
   }
   .mobileTextContainer > h2 {
     font-size: 32px;
@@ -717,10 +716,10 @@ a, a:link, a:visited {
   }
   .mobileContainer > img {
     width: 348px;
-    margin-bottom: 10px;
   }
   .mobileContainer {
     gap: 40px;
+    margin-bottom: 95px;
   }
   .footerContainer {
     padding: 60px 16px 60px 16px;
