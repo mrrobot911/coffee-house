@@ -528,6 +528,23 @@ a, a:link, a:visited {
 .burgerMenuButton {
   display: none;
 }
+.coffeeImg {
+  background-image: url(../assets/icons/coffee.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.teapotImg {
+  background-image: url(../assets/icons/teapot.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.cakeImg {
+  background-image: url(../assets/icons/cake.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 @media (hover: hover) {
   .offerButtonsItem:hover {
     background-color: #665F55;
