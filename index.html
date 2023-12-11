@@ -10,6 +10,8 @@
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="./script.js"></script>
+  <script type="module" src="/script.js"></script>
 </head>
 <body>
   <header>
@@ -24,12 +26,12 @@
     </nav>
     <a class="buttonMenu" href="./menu/menu.html">Menu <span><img src="./assets/icons/coffee-cup.svg" alt="coffee cup"></span></a>
     <button class="burgerMenuButton"><span></span></button>
-    <div class="burgerContainerOpen">
+    <div class="burgerContainerOpen burgerClose">
       <ul>
-        <li><a href="#favorite">Favorite coffee</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#mobile">Mobile app</a></li>
-        <li><a href="#contact">Contact us</a></li>
+        <li class="link"><a href="#favorite">Favorite coffee</a></li>
+        <li class="link"><a href="#about">About</a></li>
+        <li class="link"><a href="#mobile">Mobile app</a></li>
+        <li class="link"><a href="#contact">Contact us</a></li>
       </ul>
       <a class="burgerContainerButtonMenu" href="./menu/menu.html">Menu <span><img src="./assets/icons/coffee-cup.svg" alt="coffee cup"></span></a>
     </div>
