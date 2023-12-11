@@ -548,7 +548,7 @@ a, a:link, a:visited {
   background-position: center;
 }
 .burgerContainerOpen {
-  position: absolute;
+  position: fixed;
   z-index: 3;
   top: 100px;
   right: 0;
@@ -562,7 +562,7 @@ a, a:link, a:visited {
   transition: all 0.8s ease-in-out;
 }
 .burgerClose {
-  right: -999px;
+  right: -1999px;
 }
 .burgerContainerOpen > ul {
   display: flex;
