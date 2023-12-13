@@ -437,6 +437,9 @@ a, a:link, a:visited {
   gap: 16px;
   margin-bottom: 40px;
 }
+.offerButtons input {
+  display: none;
+}
 .offerButtonsItem {
   display: flex;
   flex-direction: row;
@@ -445,38 +448,23 @@ a, a:link, a:visited {
   border: 1px solid #C1B6AD;
   border-radius: 100px;
   line-height: 150%;
+  cursor: pointer;
   transition: 0.5s ease-in-out;
 }
-.offerButtonsItem > span {
+.offerButtonsItem span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
   background-color: #E1D4C9;
-  transition: 0.5s ease-in-out;
 }
-.activeOffer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px 16px 8px 8px;
+
+input:checked + .offerButtonsItem {
   border: 1px solid #C1B6AD;
-  border-radius: 100px;
-  line-height: 150%;
   background-color: #665F55;
-  cursor: default;
-}
-.activeOffer > span {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 8px;
-  background-color: #E1D4C9;
-}
-.offerButtonsItem > span {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #C1B6AD;
-  margin-right: 8px;
+  color: #C1B6AD;
+  cursor: default
 }
 .offerContainer {
   display: flex;
@@ -534,13 +522,11 @@ a, a:link, a:visited {
   background-image: url(../assets/icons/coffee.png);
   background-repeat: no-repeat;
   background-position: center;
-
 }
 .teapotImg {
   background-image: url(../assets/icons/teapot.png);
   background-repeat: no-repeat;
   background-position: center;
-
 }
 .cakeImg {
   background-image: url(../assets/icons/cake.png);

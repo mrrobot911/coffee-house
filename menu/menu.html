@@ -40,9 +40,12 @@
     <section class="coffeeContainer">
       <h1>Behind each of our cups hides an <span class="fontColour">amazing surprise</span></h1>
       <div class="offerButtons">
-        <button class="activeOffer"><span class="coffeeImg"></span>Coffee</button>
-        <button class="offerButtonsItem"><span class="teapotImg"></span>Tea</button>
-        <button class="offerButtonsItem"><span class="cakeImg"></span>Dessert</button>
+        <input type="radio" id="coffee" name="category" checked/>
+        <label  for="coffee" class="offerButtonsItem"><span class="coffeeImg"></span>Coffee</label>
+        <input type="radio" id="teapot" name="category"/>
+        <label for="teapot" class="offerButtonsItem"><span class="teapotImg"></span>Tea</label>
+        <input type="radio" id="cake" name="category"/>
+        <label for="cake" class="offerButtonsItem"><span class="cakeImg"></span>Dessert</label>
       </div>
       <div class="offerContainer">
         <article class="offerCard">
