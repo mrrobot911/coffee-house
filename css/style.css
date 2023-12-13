@@ -457,9 +457,11 @@ a, a:link, a:visited {
   height: 30px;
   border-radius: 50%;
   margin-right: 8px;
+  background-color: #C1B6AD;
+}
+input:checked + .offerButtonsItem span {
   background-color: #E1D4C9;
 }
-
 input:checked + .offerButtonsItem {
   border: 1px solid #C1B6AD;
   background-color: #665F55;

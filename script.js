@@ -10,3 +10,8 @@ burgetMenu.addEventListener('click', (e) => {
         button.classList.toggle('burgerEx');
     }
 })
+const data = fetch("../products.json")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+      })
