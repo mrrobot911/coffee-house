@@ -458,6 +458,7 @@ a, a:link, a:visited {
   border-radius: 50%;
   margin-right: 8px;
   background-color: #C1B6AD;
+  transition: all 1s ease-in-out;
 }
 input:checked + .offerButtonsItem span {
   background-color: #E1D4C9;
@@ -574,6 +575,9 @@ input:checked + .offerButtonsItem {
 .burgerContainerOpen > .burgerContainerButtonMenu img {
   width: 40px;
   height: 40px;
+}
+.opacity {
+  opacity: 0;
 }
 @media (hover: hover) {
   .offerButtonsItem:hover {

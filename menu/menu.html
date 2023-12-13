@@ -10,8 +10,7 @@
   <link rel="icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
-  <script src="../script.js"></script>
-  <script type="module" src="../script.js"></script>
+  <script type="module" src="./script.js"></script>
 </head>
 <body>
   <header>
@@ -40,94 +39,14 @@
     <section class="coffeeContainer">
       <h1>Behind each of our cups hides an <span class="fontColour">amazing surprise</span></h1>
       <div class="offerButtons">
-        <input type="radio" id="coffee" name="category" checked/>
+        <input type="radio" id="coffee" name="category" checked value="coffee"/>
         <label  for="coffee" class="offerButtonsItem"><span class="coffeeImg"></span>Coffee</label>
-        <input type="radio" id="teapot" name="category"/>
+        <input type="radio" id="teapot" name="category" value="tea"/>
         <label for="teapot" class="offerButtonsItem"><span class="teapotImg"></span>Tea</label>
-        <input type="radio" id="cake" name="category"/>
+        <input type="radio" id="cake" name="category" value="dessert"/>
         <label for="cake" class="offerButtonsItem"><span class="cakeImg"></span>Dessert</label>
       </div>
       <div class="offerContainer">
-        <article class="offerCard">
-          <div class="offerItemImage">
-            <img src="../assets/images/coffee-1.jpg" alt="Irish coffee">
-          </div>
-          <div class="offerItemText">
-            <h2>Irish coffee</h2>
-            <h3>Fragrant black coffee with Jameson Irish whiskey and whipped milk</h3>
-            <p>$7.00</p>
-          </div>
-        </article>
-        <article class="offerCard">
-          <div class="offerItemImage">
-            <img src="../assets/images/coffee-2.jpg" alt="Kahlua coffee">
-          </div>
-          <div class="offerItemText">
-            <h2>Kahlua coffee</h2>
-            <h3>Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</h3>
-            <p>$7.00</p>
-          </div>
-        </article>
-        <article class="offerCard">
-          <div class="offerItemImage">
-            <img src="../assets/images/coffee-3.jpg" alt="Honey raf">
-          </div>
-          <div class="offerItemText">
-            <h2>Honey raf</h2>
-            <h3>Espresso with frothed milk, cream and aromatic honey</h3>
-            <p>$5.50</p>
-          </div>
-        </article>
-        <article class="offerCard">
-          <div class="offerItemImage">
-            <img src="../assets/images/coffee-4.jpg" alt="Ice cappuccino">
-          </div>
-          <div class="offerItemText">
-            <h2>Ice cappuccino</h2>
-            <h3>Cappuccino with soft thick foam in summer version with ice</h3>
-            <p>$5.00</p>
-          </div>
-        </article>
-        <article class="offerCard">
-          <div class="offerItemImage">
-            <img src="../assets/images/coffee-5.jpg" alt="Espresso">
-          </div>
-          <div class="offerItemText">
-            <h2>Espresso</h2>
-            <h3>Classic black coffee</h3>
-            <p>$4.50</p>
-          </div>
-        </article>
-        <article class="offerCard">
-          <div class="offerItemImage">
-            <img src="../assets/images/coffee-6.jpg" alt="Latte">
-          </div>
-          <div class="offerItemText">
-            <h2>Latte</h2>
-            <h3>Espresso coffee with the addition of steamed milk and dense milk foam</h3>
-            <p>$5.50</p>
-          </div>
-        </article>
-        <article class="offerCard">
-          <div class="offerItemImage">
-            <img src="../assets/images/coffee-7.jpg" alt="Latte macchiato">
-          </div>
-          <div class="offerItemText">
-            <h2>Latte macchiato</h2>
-            <h3>Espresso with frothed milk and chocolate</h3>
-            <p>$5.50</p>
-          </div>
-        </article>
-        <article class="offerCard">
-          <div class="offerItemImage">
-            <img src="../assets/images/coffee-8.jpg" alt="Coffee with cognac">
-          </div>
-          <div class="offerItemText">
-            <h2>Coffee with cognac</h2>
-            <h3>Fragrant black coffee with cognac and whipped cream</h3>
-            <p>$6.50</p>
-          </div>
-        </article>
       </div>
       <button class="refreshButton"></button>
     </section>

@@ -1,5 +1,9 @@
+import { cards } from "./cards.js";
+import { sliseOfferCards } from "./helpers.js";
+
 const button = document.querySelector('.burgerMenuButton');
 const burgetMenu = document.querySelector('.burgerContainerOpen');
+const offerButtonsBlock = document.querySelector('.offerButtons');
 
 button.addEventListener('click', () => { 
     burgetMenu.classList.toggle('burgerClose');
@@ -11,3 +15,6 @@ burgetMenu.addEventListener('click', (e) => {
         button.classList.toggle('burgerEx');
     }
 })
+cards('coffee');
+
+offerButtonsBlock.addEventListener('change', sliseOfferCards);
