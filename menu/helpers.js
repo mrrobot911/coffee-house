@@ -5,8 +5,9 @@ export const createElement = (tagName,attr) => {
     Object.assign(elem, attr);
     return elem
 };
-export const sliseOfferCards = (e) => {
+export const sliseOfferCards = (e, size, refresh) => {
     let offer = '';
     offer = e.target.value;
-    cards(offer);
-}
+    cards(offer, size, refresh);
+    return offer
+};

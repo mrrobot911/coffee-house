@@ -423,6 +423,7 @@ a, a:link, a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 .coffeeContainer > h1 {
   text-align: center;
@@ -684,18 +685,16 @@ input:checked + .offerButtonsItem {
   }
   .offerContainer {
     margin-left: 15px;
-    max-height: 1060px;
-    overflow: hidden;
     gap: 35px;
     margin-bottom: 32px;
   }
   .refreshButton {
     display: block;
+    align-self: center;
     width: 60px;
     height: 60px;
     border: 1px solid #665F55;
     border-radius: 50%;
-    margin-bottom: 100px;
     background-image: url(../assets/icons/refresh.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -803,9 +802,6 @@ input:checked + .offerButtonsItem {
   .coffeeContainer > h1 {
     font-size: 32px;
     margin-bottom: 40px;
-  }
-  .offerContainer {
-    max-height: 2152px;
   }
   .offerButtons {
     gap: 8px;
