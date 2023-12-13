@@ -539,44 +539,7 @@ input:checked + .offerButtonsItem {
   background-position: center;
 }
 .burgerContainerOpen {
-  position: fixed;
-  z-index: 3;
-  top: 100px;
-  right: 0;
-  padding: 60px 40px;
-  width: 100%;
-  height: 100vh;
-  background-color: #E1D4C9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 0.8s ease-in-out;
-}
-.burgerClose {
-  right: -1999px;
-}
-.burgerContainerOpen > ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  margin-bottom: 100px;
-}
-.burgerContainerOpen a {
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 125%;
-  padding: 0px;
-}
-.burgerContainerButtonMenu {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: space-between;
-}
-.burgerContainerOpen > .burgerContainerButtonMenu img {
-  width: 40px;
-  height: 40px;
+  display: none;
 }
 .opacity {
   opacity: 0;
@@ -746,6 +709,46 @@ input:checked + .offerButtonsItem {
   }
   .heroText > a::after{
     opacity: 1;
+  }
+  .burgerContainerOpen {
+    position: fixed;
+    z-index: 3;
+    top: 100px;
+    right: 0;
+    padding: 60px 40px;
+    width: 100%;
+    height: 100vh;
+    background-color: #E1D4C9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.8s ease-in-out;
+  }
+  .burgerClose {
+    right: -1999px;
+  }
+  .burgerContainerOpen > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px;
+  }
+  .burgerContainerOpen a {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 125%;
+    padding: 0px;
+  }
+  .burgerContainerButtonMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .burgerContainerOpen > .burgerContainerButtonMenu img {
+    width: 40px;
+    height: 40px;
   }
 }
 @media (max-width: 510px) {
