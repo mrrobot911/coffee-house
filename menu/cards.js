@@ -7,7 +7,7 @@ export const cards = async (category) => {
     const seasonArray = await fetchDB();
     const items = seasonArray.filter((item) => item.category === category).map((item, i) => {
         const seasonArrayItem = document.createElement('article');
-        seasonArrayItem.className = "offerCard";
+        seasonArrayItem.className = "offerCard opacity";
         seasonArrayItem.insertAdjacentHTML('beforeend', `
         <div class="offerItemImage">
             <img src="../assets/images/${category}-${i + 1}.${category === 'coffee' ? 'jpg' : 'png'}" alt=${item.name}>
@@ -15,7 +15,7 @@ export const cards = async (category) => {
         <div class="offerItemText">
             <h2>${item.name}</h2>
             <h3>${item.description}</h3>
-            <p>${item.price}</p>
+            <p>$ ${item.price}</p>
         </div>
         `);
         return seasonArrayItem

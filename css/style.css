@@ -449,7 +449,6 @@ a, a:link, a:visited {
   border-radius: 100px;
   line-height: 150%;
   cursor: pointer;
-  transition: 0.5s ease-in-out;
 }
 .offerButtonsItem span {
   display: block;
@@ -481,6 +480,8 @@ input:checked + .offerButtonsItem {
   cursor: pointer;
   border: 1px solid #C1B6AD;
   border-radius: 40px;
+  position: relative;
+  transition: 0.5s ease-in-out;
 }
 .offerItemImage {
   width: inherit;
