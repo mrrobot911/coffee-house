@@ -25,6 +25,7 @@ cards(category, size, refresh);
 
 window.addEventListener('resize', function() {
     size = window.innerWidth;
+    cards(category, size, refresh);
     return size;
 }, true);
 
