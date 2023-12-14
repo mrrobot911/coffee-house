@@ -576,10 +576,6 @@ input:checked + .offerButtonsItem {
   object-fit: cover;
   transition: all 0.8s ease-in-out;
 }
-.noscroll {
-  position: fixed;
-  overflow-y:scroll;
-}
 @media (hover: hover) {
   .offerButtonsItem:hover {
     background-color: #665F55;

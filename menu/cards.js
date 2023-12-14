@@ -67,7 +67,6 @@ export const cards = async (category, size, refresh) => {
                 `;
                 body.append(modal);
             })
-            body.classList.add('noscroll');
             return offersArrayItem
         });
 
