@@ -1,6 +1,7 @@
 export const cards = async (category, size, refresh) => {
     const offerContainer = document.querySelector('.offerContainer');
     const refreshButton = document.querySelector('.refreshButton');
+    const body = document.querySelector('body');
     function fetchDB() {
         return fetch("../products.json")
             .then(result => {return result.json()});
@@ -25,6 +26,48 @@ export const cards = async (category, size, refresh) => {
                 <p>$ ${item.price}</p>
             </div>
             `);
+            offersArrayItem.addEventListener('click', function modalOpen(){
+                const modal = document.createElement('div');
+                modal.innerHTML = `
+                <div class="modalWrapper"></div>
+                <div class="modalContainer">
+                    <div class="offerItemModalImg">
+                        <img src="../assets/images/${category}-${i + 1}.${category === 'coffee' ? 'jpg' : 'png'}" alt=${item.name}>
+                    </div>
+                    <div>
+                        <h2>${item.name}</h2>
+                        <h3>${item.description}</h3>
+                        <p>Size</p>
+                        <div class="offerButtons">
+                            ${Object.keys(item.sizes).map(el => {
+                                return (
+                                `<input type="radio" id=${el} name="sizes" value=${el}/>
+                                <label  for=${el} class="offerButtonsItem"><span>${el}</span>${item.sizes[`${el}`].size}</label>`
+                                )
+                            }).join('')}
+                        </div>
+                        <p>Additives</p>
+                        <div class="offerButtons">
+                            ${Object.keys(item.additives).map(el => {
+                                return (
+                                `<input type="radio" id=${el} name="additives" value=${el}/>
+                                <label  for=${el} class="offerButtonsItem"><span>${el}</span>${item.additives[`${el}`].name}</label>`
+                                )
+                            }).join('')}
+                        </div>
+                        <div class="totalPrice">
+                            <p>Total:</p>
+                            <p>${item.price}</p>
+                        </div>
+                        <br/>
+                        <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+                        <button>Close</button>
+                    </div>
+                </div>
+                `;
+                body.append(modal);
+            })
+            body.classList.add('noscroll');
             return offersArrayItem
         });
 

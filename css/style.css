@@ -544,6 +544,42 @@ input:checked + .offerButtonsItem {
 .opacity {
   opacity: 0;
 }
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(142,142,142,0.5);
+}
+.modalContainer {
+  position: fixed;
+  gap: 15px;
+  background-color: #E1D4C9;
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  border-radius: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.offerItemModalImg {
+  min-width: 310px;
+  height: 310px;
+  overflow: hidden;
+  border-radius: 40px;
+}
+.offerItemModalImg img {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  transition: all 0.8s ease-in-out;
+}
+.noscroll {
+  position: fixed;
+  overflow-y:scroll;
+}
 @media (hover: hover) {
   .offerButtonsItem:hover {
     background-color: #665F55;
