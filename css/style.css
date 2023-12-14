@@ -452,7 +452,9 @@ a, a:link, a:visited {
   cursor: pointer;
 }
 .offerButtonsItem span {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -462,6 +464,7 @@ a, a:link, a:visited {
 }
 input:checked + .offerButtonsItem span {
   background-color: #E1D4C9;
+  color: #665F55;
 }
 input:checked + .offerButtonsItem {
   border: 1px solid #C1B6AD;
@@ -555,6 +558,7 @@ input:checked + .offerButtonsItem {
 .modalContainer {
   position: fixed;
   gap: 15px;
+  z-index: 5;
   background-color: #E1D4C9;
   display: flex;
   flex-direction: row;
@@ -575,6 +579,49 @@ input:checked + .offerButtonsItem {
   height: 340px;
   object-fit: cover;
   transition: all 0.8s ease-in-out;
+}
+.modalTextContainer h2{
+  font-size: 24px;
+  line-height: 125%;
+}
+.modalTextContainer h3{
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.modalTextContainer > p {
+  margin: 20px 0px;
+}
+.totalPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 125%;
+  font-size: 24px;
+}
+.modalInfo {
+  font-size: 10px;
+  line-height: 140%;
+  padding: 15px 0px 15px 24px;
+  position: relative;
+}
+.modalInfo::before {
+  content: '';
+	position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  left: 0;
+  background-image: url(../assets/icons/info.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.modalTextContainer button {
+  padding: 10px 78px;
+  border: 1px solid #665F55;
+  width: 100%;
+  border-radius: 100px; 
 }
 @media (hover: hover) {
   .offerButtonsItem:hover {

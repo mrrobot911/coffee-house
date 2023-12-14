@@ -28,21 +28,22 @@ export const cards = async (category, size, refresh) => {
             `);
             offersArrayItem.addEventListener('click', function modalOpen(){
                 const modal = document.createElement('div');
+                modal.className = 'modalElement';
                 modal.innerHTML = `
-                <div class="modalWrapper"></div>
+                <div class="modalWrapper" onClick={document.querySelector('.modalElement').remove()}></div>
                 <div class="modalContainer">
                     <div class="offerItemModalImg">
                         <img src="../assets/images/${category}-${i + 1}.${category === 'coffee' ? 'jpg' : 'png'}" alt=${item.name}>
                     </div>
-                    <div>
+                    <div class="modalTextContainer">
                         <h2>${item.name}</h2>
                         <h3>${item.description}</h3>
                         <p>Size</p>
                         <div class="offerButtons">
                             ${Object.keys(item.sizes).map(el => {
                                 return (
-                                `<input type="radio" id=${el} name="sizes" value=${el}/>
-                                <label  for=${el} class="offerButtonsItem"><span>${el}</span>${item.sizes[`${el}`].size}</label>`
+                                `<input type="radio" id=${el} name="sizes" value=${el} ${el === 's' ? 'checked' : ''}/>
+                                <label  for=${el} class="offerButtonsItem"><span>${el.toUpperCase()}</span>${item.sizes[`${el}`].size}</label>`
                                 )
                             }).join('')}
                         </div>
@@ -50,18 +51,17 @@ export const cards = async (category, size, refresh) => {
                         <div class="offerButtons">
                             ${Object.keys(item.additives).map(el => {
                                 return (
-                                `<input type="radio" id=${el} name="additives" value=${el}/>
+                                `<input type="checkbox" id=${el} value=${el}/>
                                 <label  for=${el} class="offerButtonsItem"><span>${el}</span>${item.additives[`${el}`].name}</label>`
                                 )
                             }).join('')}
                         </div>
                         <div class="totalPrice">
                             <p>Total:</p>
-                            <p>${item.price}</p>
+                            <p>$ ${item.price}</p>
                         </div>
-                        <br/>
-                        <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
-                        <button>Close</button>
+                        <p class="modalInfo">The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+                        <button onClick={document.querySelector('.modalElement').remove()}>Close</button>
                     </div>
                 </div>
                 `;
